@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <script>
+        function myfun(){
+            
+            var a = document.getElementById("passwords").value;
+            if(a.length<8){
+                document.getElementById("message1").innerHTML="Password must be greater than 8 variables";
+                return false;
+            }
+            
+        }
+    </script>
+        <div class="sign-up-form">
+            <img src="user1.png">
+            <h1> Sign Up Now</h1>
+            <form>
+                <input type="email" class="input-box" placeholder="Email-ID" id="mail" required>
+                <input type="password" class="input-box" placeholder="Password" id="passwords" required><span id="message1"></span>
+                <p><span><input type="checkbox" required></span>I Agree To Terms And Conditions</p>
+                <button type="submit" class="sign-btn" onclick="return myfun()">Sign up</button>
+                <hr>
+                
+
+            </form>
+        </div>
+    </body>
+</html>
